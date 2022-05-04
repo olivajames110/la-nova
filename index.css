@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.timeline-outer-wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  background: #033085;
+  overflow: hidden;
+  -webkit-box-shadow: 0 -1px 10px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 -1px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.sport-logo {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.timeline-page-header {
+  text-align: center;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 1.4em;
+  font-family: "Oswald", sans-serif !important;
+}
+
+.timeline-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline-row > .timeline-magazine {
+  position: absolute;
+  border: 10px solid #ffffff;
+  top: 50%;
+  max-height: 85%;
+  max-width: 310px;
+  z-index: 1;
+}
+.timeline-row > .timeline-magazine > img {
+  width: 100%;
+  display: block;
+}
+
+.menu {
+  position: absolute;
+  bottom: -100px;
+  width: 50% !important;
+  left: 20%;
+  transform: rotate(-15deg);
+}
+
+.timeline-row > .timeline-magazine {
+  right: 10%;
+  -webkit-transform: translateY(-50%) rotate(7deg);
+  -ms-transform: translateY(-50%) rotate(7deg);
+  transform: translateY(-50%) rotate(7deg);
+}
+
+.timeline-inverted > .timeline-magazine {
+  left: 10%;
+  -webkit-transform: translateY(-50%) rotate(-7deg);
+  -ms-transform: translateY(-50%) rotate(-7deg);
+  transform: translateY(-50%) rotate(-7deg);
+}
+
+.timeline {
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.timeline-body img {
+  width: 100%;
+  margin-top: 15px;
+  height: auto;
+}
+
+.inner-box {
+  border: 6px solid #d5102e;
+  padding: 10px 20px;
+}
+
+.timeline-title {
+  margin-top: 0;
+  font-size: 36px !important;
+  font-family: "Oswald", sans-serif !important;
+  font-weight: bold !important;
+  color: #d5102e;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline > li {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline > li:last-child {
+  margin-bottom: 30px !important;
+}
+
+.timeline > li:nth-child(n + 2) {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.timeline > li:last-child {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li > .timeline-panel {
+  width: 46%;
+  float: left;
+  background-color: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 8px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 10px 4px rgb(0 0 0 / 12%);
+  box-shadow: 0 1px 10px 4px rgb(0 0 0 / 12%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 7px;
+  text-align: center;
+  z-index: 10;
+}
+
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ffffff;
+  border-right: 0 solid #ffffff;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  content: " ";
+}
+
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #ffffff;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.timeline-badge img {
+  width: 70%;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  /* text-align: left; */
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline-body p,
+.timeline-body > ul {
+  font-family: "Jost", sans-serif !important;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+
+/* Custom magazine positions */
+#magazine--1957 {
+  max-width: 35%;
+  right: 5px;
+  top: 42%;
+}
+#magazine--1971 {
+  max-width: 38%;
+  left: 5%;
+}
+
+#magazine--2015 {
+  max-width: 46%;
+  left: 0px;
+}
+#magazine--2020 {
+  max-width: 46%;
+  right: 0px;
+}
+
+.timeline-body-two-col {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.timeline-body-two-col p {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+@media (max-width: 767px) {
+  ul.timeline:before {
+    left: 40px;
+  }
+
+  ul.timeline > li > .timeline-panel {
+    width: calc(100% - 70px);
+    width: -webkit-calc(100% - 70px);
+  }
+
+  ul.timeline > li > .timeline-badge {
+    left: 15px;
+    margin-left: 0;
+    top: 16px;
+  }
+
+  ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+
+  ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+
+  .inner-box {
+    border: 6px solid #d5102e;
+    padding: 10px 5px;
+  }
+
+  .timeline-inverted > .timeline-magazine,
+  .timeline-row > .timeline-magazine {
+    left: 0%;
+    right: unset !important;
+    max-height: 35%;
+    position: relative;
+    display: block;
+    transform: unset !important;
+    margin: 0 auto;
+    float: right;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    max-width: 230px;
+    -webkit-transform: translateX(-15%) !important;
+    -ms-transform: translateX(-15%) !important;
+    transform: translateX(-15%) !important;
+    /* -webkit-transform: translateY(-50%) rotate(-4deg) !important;
+        -ms-transform: translateY(-50%) rotate(-4deg) !important;
+        transform: translateY(-50%) rotate(-4deg) !important; */
+    border: 4px solid #ffffff !important;
+  }
+
+  .timeline > li {
+    margin-bottom: 30px !important;
+  }
+  .menu {
+    bottom: -30px !important;
+  }
+  #magazine--1971 {
+    /* max-width: 38%; */
+    left: 0 !important;
+  }
+}
